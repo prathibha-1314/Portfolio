@@ -1,17 +1,12 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0A192F] text-[#ccd6f6]">
+    <main className="min-h-screen bg-[#08111f] text-[#ccd6f6]">
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50">
         <div className="mx-auto max-w-7xl px-8 md:px-16 py-8 flex items-center justify-between">
 
-          <a
-            href="#"
-            className="text-[#64ffda] font-medium text-lg"
-          >
-            Portfolio
-          </a>
+        
 
           <div className="hidden md:flex items-center gap-10 text-sm text-[#8892b0]">
             <a href="#about" className="hover:text-[#64ffda] transition">
@@ -34,7 +29,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center">
+      <section className="min-h-[85vh] flex items-center">
         <div className="max-w-4xl px-8 md:px-16">
 
           <p className="text-[#64ffda] text-sm tracking-widest mb-6">
@@ -59,13 +54,15 @@ export default function Home() {
 
           <div className="mt-12">
             <a
-              href="#projects"
-              className="inline-block border border-[#64ffda]
-              text-[#64ffda] px-8 py-4 rounded
-              hover:bg-[#64ffda]/10 transition"
-            >
-              View Projects
-            </a>
+  href="#projects"
+  className="inline-block border border-[#64ffda]
+  text-[#64ffda] px-8 py-4 rounded
+  hover:bg-[#64ffda]
+  hover:text-[#08111f]
+  transition-all duration-300"
+>
+  View Projects
+</a>
           </div>
         </div>
       </section>
@@ -267,29 +264,26 @@ export default function Home() {
 
   <div className="space-y-16">
 
-    {/* Tata Forage */}
     <div>
       <p className="text-[#64ffda] text-sm mb-2">
-        Sep 2025
+        May 2026 – June 2026
       </p>
 
       <h3 className="text-xl font-semibold">
-        Tata Forage – GenAI-Powered Data Analytics Virtual Internship
+        Data Analyst Intern – DVein Innovations
       </h3>
 
       <p className="text-[#8892b0] mt-4 leading-8">
-        Completed a virtual internship focusing on AI-driven
-        financial analytics. Conducted exploratory data
-        analysis (EDA), delivered structured insights,
-        and proposed a no-code predictive modelling
-        approach to support compliance and automation workflows.
+        Completed a one-month internship focused on data analytics
+        and business intelligence. Worked with Excel and Power BI
+        to clean, analyze, and visualize datasets, transforming
+        raw data into actionable insights through dashboards and reports.
       </p>
     </div>
 
-    {/* RISE */}
     <div>
       <p className="text-[#64ffda] text-sm mb-2">
-        2025
+        2026
       </p>
 
       <h3 className="text-xl font-semibold">
@@ -297,14 +291,11 @@ export default function Home() {
       </h3>
 
       <p className="text-[#8892b0] mt-4 leading-8">
-        Completed a task-based internship focused on
-        Generative AI and Prompt Engineering using Python,
-        involving hands-on experimentation with AI tools,
-        prompt structuring, and workflow optimization.
+        Completed a task-based internship focused on Generative AI,
+        Prompt Engineering, and AI workflow optimization using Python.
       </p>
     </div>
 
-    {/* Tales by Mav */}
     <div>
       <p className="text-[#64ffda] text-sm mb-2">
         Founder
@@ -315,17 +306,15 @@ export default function Home() {
       </h3>
 
       <p className="text-[#8892b0] mt-4 leading-8">
-        Founded and managed a handmade accessories brand.
-        Created branding materials, designed marketing
-        content, analyzed engagement metrics, and managed
-        customer interactions through social media platforms.
+        Founded and managed a handmade accessories brand,
+        handling branding, customer engagement, content creation,
+        and business operations.
       </p>
     </div>
 
-    {/* $2 Challenge */}
     <div>
       <p className="text-[#64ffda] text-sm mb-2">
-        Event Leadership
+        2025
       </p>
 
       <h3 className="text-xl font-semibold">
@@ -333,10 +322,8 @@ export default function Home() {
       </h3>
 
       <p className="text-[#8892b0] mt-4 leading-8">
-        Coordinated planning and execution of a student
-        innovation challenge. Managed participant
-        coordination, communication, event logistics,
-        and team collaboration to ensure smooth execution.
+        Coordinated planning, participant management,
+        communication, and execution of a student innovation challenge.
       </p>
     </div>
 
@@ -414,48 +401,48 @@ export default function Home() {
   <div className="grid md:grid-cols-2 gap-6">
 
     {[
-      {
-        title: "Introduction to Generative AI",
-        issuer: "Google Cloud × Simplilearn",
-        year: "2024",
-      },
+  {
+    title: "Product Management Job Simulation",
+    issuer: "Electronic Arts × Forage",
+    year: "2026",
+  },
 
-      {
-        title: "GenAI Powered Data Analytics",
-        issuer: "Tata × Forage",
-        year: "2025",
-      },
+  {
+    title: "Data Structure - C Course",
+    issuer: "SkillRack",
+    year: "2026",
+  },
 
-      {
-        title: "Data Analytics Job Simulation",
-        issuer: "Deloitte × Forage",
-        year: "2025",
-      },
+  {
+    title: "Generative AI & Prompt Engineering",
+    issuer: "RISE Internship Program",
+    year: "2026",
+  },
 
-      {
-        title: "Product Management Job Simulation",
-        issuer: "Electronic Arts × Forage",
-        year: "2026",
-      },
+  {
+    title: "Data Analytics Job Simulation",
+    issuer: "Deloitte × Forage",
+    year: "2025",
+  },
 
-      {
-        title: "Generative AI & Prompt Engineering",
-        issuer: "RISE Internship Program",
-        year: "2026",
-      },
+  {
+    title: "GenAI Powered Data Analytics",
+    issuer: "Tata × Forage",
+    year: "2025",
+  },
 
-      {
-        title: "C Programming Course",
-        issuer: "SkillRack",
-        year: "2025",
-      },
+  {
+    title: "C Programming Course",
+    issuer: "SkillRack",
+    year: "2025",
+  },
 
-      {
-        title: "Data Structure - C Course",
-        issuer: "SkillRack",
-        year: "2026",
-      },
-    ].map((cert) => (
+  {
+    title: "Introduction to Generative AI",
+    issuer: "Google Cloud × Simplilearn",
+    year: "2024",
+  },
+].map((cert) => (
       <div
         key={cert.title}
         className="bg-[#112240] p-6 rounded-lg hover:-translate-y-1 transition"
