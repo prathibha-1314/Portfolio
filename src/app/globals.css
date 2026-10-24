@@ -63,3 +63,10 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 /* More explorations: compact cards separated from the four featured projects */
 .explorations-block { margin-top:46px; }.explorations-block h3 { font-size:clamp(23px,3vw,30px);letter-spacing:-.04em;margin:0 0 18px; }.explorations-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px; }.exploration-card { padding:19px;border:1px solid #6ee7b72b;border-radius:14px;background:linear-gradient(145deg,#10251eaa,#091a14cc);transition:transform .25s,border-color .25s; }.exploration-card:hover { transform:translateY(-4px);border-color:#5eead488; }.exploration-card .project-eyebrow { margin-top:0;color:#6ee7b7; }.exploration-card h4 { margin:8px 0;font-size:16px; }.exploration-card p:last-child { margin-bottom:0;color:var(--muted);font-size:12px;line-height:1.75; }.contact-placeholder { max-width:350px;color:var(--muted);font-size:11px;line-height:1.7; }
 @media (max-width:650px) { .explorations-grid { grid-template-columns:1fr; } }
+
+
+/* Circular profile portrait in the animated hero orbit */
+.profile-core { width:210px;height:210px;gap:0;overflow:visible;padding:8px;background:linear-gradient(145deg,#164e3c,#0b241b);border:2px solid var(--cyan);box-shadow:0 0 0 8px #5eead414,0 0 38px #10b98138,0 0 85px #10b98125;animation:core-float 5s ease-in-out infinite; }
+.profile-photo { display:block;width:100%;height:100%;object-fit:cover;object-position:center 34%;border-radius:50%;border:3px solid #071310; }
+.profile-caption { position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);white-space:nowrap;color:#a7f3d0;font-size:9px;letter-spacing:.17em;text-shadow:0 0 14px #10b98155; }
+@media (max-width:650px) { .profile-core { width:165px;height:165px; } }
