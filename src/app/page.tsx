@@ -13,7 +13,6 @@ const projects = [
 const explorations = [
   { name: "ConvoyX", type: "IDEA STAGE", description: "A group-travel coordination idea featuring shared stops, route planning, and route-deviation alerts." },
   { name: "RiderCash", type: "IDEATION STAGE", description: "A project idea selected for the Tamizhan Skills Ideathon. Further details will be added when the original concept documentation is available." },
-  { name: "GitKraken / Source Control Demo", type: "LEARNING ACTIVITY", description: "A classroom seminar and live demonstration exploring graphical Git workflows and source-control tools." },
 ];
 const skills = ["Python", "SQL fundamentals", "Excel", "Power BI", "Tableau", "Data visualisation", "EDA", "Generative AI", "Prompt engineering", "C", "Java basics", "HTML & CSS", "JavaScript", "Git & GitHub", "Product ideation"];
 
