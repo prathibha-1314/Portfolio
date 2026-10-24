@@ -117,3 +117,21 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 .toolkit-item:hover { background:#245BFF0d;border-color:#5B8CFF55; }
 .toolkit-item img { display:block;width:18px;height:18px;object-fit:contain;flex:0 0 18px; }
 @media (max-width:650px) { .toolkit-row { grid-template-columns:1fr;gap:11px;padding:18px 0; }.toolkit-row h3 { margin:0; }.toolkit-items { gap:7px; }.toolkit-item { font-size:11px;padding:8px 10px; } }
+
+/* Reliable in-page toolkit logo marks: no third-party icon requests */
+.toolkit-item { gap:9px; }
+.toolkit-logo { width:24px;height:24px;flex:0 0 24px;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;background:#ffffff0b;border:1px solid #ffffff12;color:#DCE6FF;font-size:10px;font-weight:800;letter-spacing:-.04em;line-height:1; }
+.logo-python { color:#FFD45C;background:#3776AB20; }
+.logo-sql { color:#8CB9FF;background:#4169E120; }
+.logo-c { color:#A8B9CC;background:#A8B9CC18; }
+.logo-java { color:#F39B71;background:#E76F0020; }
+.logo-excel,.logo-cleaning,.logo-metrics { color:#43C98B;background:#21734620; }
+.logo-eda { color:#B6A2FF;background:#6C5CE720; }
+.logo-powerbi { color:#F2C811;background:#F2C81114; }
+.logo-github { color:#FFFFFF;background:#FFFFFF12; }
+.logo-vscode { color:#4CB7FF;background:#007ACC20; }
+.logo-canva { color:#42D9D0;background:#00C4CC18; }
+.logo-jira { color:#7BA8FF;background:#0052CC20; }
+.logo-trello { color:#6DA6FF;background:#0052CC20; }
+.logo-tableau { color:#FFAA72;background:#E9762718; }
+.logo-ai,.logo-prompt,.logo-workflow { color:#AFC5FF;background:#5B8CFF18; }
