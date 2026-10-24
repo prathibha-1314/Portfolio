@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const projects = [
   { name: "ClearWay", icon: "🚑", type: "SOCIAL IMPACT", description: "A context-aware smart ambulance alert concept designed to support emergency response with drive-mode detection and location-aware alerts.", tags: ["Flutter", "Firebase", "GPS"], status: "Prototype in progress", detail: "ClearWay explores selective alerts for drivers when an ambulance is approaching. A prototype or public repository can be linked here when available." },
@@ -15,7 +15,20 @@ const skills = ["Python", "SQL", "Power BI", "Excel", "Git & GitHub", "Data anal
 export default function Home() {
   const [active, setActive] = useState<(typeof projects)[number] | null>(null);
   const [menu, setMenu] = useState(false);
-  return <main className="site-shell">
+  const [scrollProgress, setScrollProgress] = useState(0);
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0);
+    };
+    updateProgress();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", updateProgress);
+    return () => { window.removeEventListener("scroll", updateProgress); window.removeEventListener("resize", updateProgress); };
+  }, []);
+  return <main className="site-shell" onPointerMove={(event) => { const rect = event.currentTarget.getBoundingClientRect(); event.currentTarget.style.setProperty("--pointer-x", `${event.clientX - rect.left}px`); event.currentTarget.style.setProperty("--pointer-y", `${event.clientY - rect.top}px`); }}>
+    <div className="scroll-progress" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
+    <div className="pointer-aura" aria-hidden="true" />
     <div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="star-field" aria-hidden="true"/>
     <header className="site-header"><a href="#home" className="brand"><span className="brand-mark">✳</span> Prathibha P</a><button className="menu-toggle" aria-label="Toggle navigation" onClick={() => setMenu(!menu)}>{menu ? "×" : "☰"}</button><nav className={`navigation ${menu ? "navigation-open" : ""}`}>{["About","Projects","Experience","Skills","Certifications","Contact"].map(x=><a key={x} href={`#${x.toLowerCase()}`} onClick={()=>setMenu(false)}>{x}</a>)}</nav><a className="header-cta" href="#contact">Let&apos;s connect <span>↗</span></a></header>
     <section id="home" className="hero section-wrap"><div className="hero-copy reveal-up"><p className="eyebrow"><span className="status-dot"/> AI &amp; DATA GENERALIST <span className="eyebrow-divider">/</span> BUILDER</p><h1>Hi, I&apos;m<br/><span className="gradient-text">Prathibha P.</span></h1><h2 className="hero-statement">Building practical technology solutions for <span className="underline-glow">real-world challenges.</span></h2><p className="hero-description">I explore the intersection of AI, data analytics, and product development to turn ideas into useful solutions with meaningful impact.</p><div className="hero-actions"><a className="button button-primary" href="#projects">Explore my work <span>↘</span></a><a className="button button-ghost" href="#contact">Get in touch <span>↗</span></a></div><div className="hero-note"><span className="scroll-line"/> Scroll to explore</div></div>
