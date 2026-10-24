@@ -79,3 +79,11 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 .exploration-card { border-color:#5B8CFF2b;background:linear-gradient(145deg,#151B2Aee,#0C101Acc); }
 .exploration-card:hover { border-color:#5B8CFF88; }
 .contact-placeholder { color:#AAB3C5; }
+
+
+/* Grouped toolkit layout */
+.skill-groups { display:grid;gap:24px; }
+.skill-group { display:grid;grid-template-columns:minmax(180px,0.7fr) minmax(0,1.8fr);gap:18px;align-items:start; }
+.skill-group-heading h3 { margin:0 0 6px;font-size:14px; }
+.skill-group-heading p { margin:0;color:var(--muted);font-size:12px;line-height:1.6; }
+@media (max-width:640px) { .skill-group { grid-template-columns:1fr;gap:12px; } }
