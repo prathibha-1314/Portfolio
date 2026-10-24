@@ -87,3 +87,9 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 .skill-group-heading h3 { margin:0 0 6px;font-size:14px; }
 .skill-group-heading p { margin:0;color:var(--muted);font-size:12px;line-height:1.6; }
 @media (max-width:640px) { .skill-group { grid-template-columns:1fr;gap:12px; } }
+
+
+/* Simple resume-style toolkit list */
+.toolkit-list { display:grid;gap:14px; }
+.toolkit-list p { margin:0;color:var(--muted);font-size:13px;line-height:1.8; }
+.toolkit-list strong { color:var(--text);font-weight:600; }
