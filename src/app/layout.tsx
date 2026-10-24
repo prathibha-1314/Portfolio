@@ -6,11 +6,11 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Prathibha P | AI & Data Portfolio",
-  description: "Explore Prathibha P's projects across AI, data analytics, and product development.",
+  title: "Prathibha P | AI, Data & Product Portfolio",
+  description: "A Computer Science Engineering student exploring AI, data analytics, and product development.",
   openGraph: {
     title: "Prathibha P | AI & Data Portfolio",
-    description: "Building practical technology solutions for real-world challenges.",
+    description: "Exploring how data and technology can solve real-world problems.",
     type: "website",
   },
 };
