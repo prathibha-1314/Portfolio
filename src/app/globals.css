@@ -135,3 +135,8 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 .logo-trello { color:#6DA6FF;background:#0052CC20; }
 .logo-tableau { color:#FFAA72;background:#E9762718; }
 .logo-ai,.logo-prompt,.logo-workflow { color:#AFC5FF;background:#5B8CFF18; }
+
+
+/* Real Simple Icons brand marks in the toolkit; keep the SVG artwork unobstructed. */
+.toolkit-item img.toolkit-logo { display:block;width:24px;height:24px;flex:0 0 24px;object-fit:contain;padding:1px;border:0;border-radius:0;background:transparent; }
+.toolkit-logo.toolkit-symbol { width:24px;height:24px;flex:0 0 24px;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;background:#ffffff0b;border:1px solid #ffffff12;color:#DCE6FF;font-size:15px;font-weight:700; }
