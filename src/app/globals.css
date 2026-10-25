@@ -218,3 +218,48 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
   .ws-6 { top:calc(50% + 119px);left:calc(50% - 135px); }
   .ws-7 { top:calc(50% - 8px);left:calc(50% - 166px); }
 }
+
+
+/* Polished soft-skill orbit composition */
+.skill-orbit-art { min-height:560px; }
+.ring-product { width:286px;height:286px;border-color:#5B8CFF42;box-shadow:0 0 18px #245BFF0b; }
+.ring-work { width:476px;height:476px;border-color:#9B8CFF48; }
+.skill-label { transform:translate(-50%,-50%);font-size:9px;letter-spacing:0;padding:7px 10px;background:#0B1222ed;box-shadow:0 3px 12px #0003; }
+.work-skill { background:#0D1020f2; }
+.ps-1 { top:calc(50% - 169px);left:50%; }
+.ps-2 { top:calc(50% - 102px);left:calc(50% + 125px);right:auto; }
+.ps-3 { top:calc(50% + 7px);left:calc(50% + 153px);right:auto; }
+.ps-4 { top:calc(50% + 111px);left:calc(50% + 112px);right:auto;bottom:auto; }
+.ps-5 { top:calc(50% + 169px);left:50%;bottom:auto; }
+.ps-6 { top:calc(50% + 111px);left:calc(50% - 125px);bottom:auto; }
+.ps-7 { top:calc(50% + 7px);left:calc(50% - 153px); }
+.ws-1 { top:calc(50% - 238px);left:50%; }
+.ws-2 { top:calc(50% - 156px);left:calc(50% + 182px);right:auto; }
+.ws-3 { top:calc(50% - 8px);left:calc(50% + 235px);right:auto; }
+.ws-4 { top:calc(50% + 140px);left:calc(50% + 193px);right:auto;bottom:auto; }
+.ws-5 { top:calc(50% + 238px);left:50%;bottom:auto; }
+.ws-6 { top:calc(50% + 156px);left:calc(50% - 193px);bottom:auto; }
+.ws-7 { top:calc(50% - 8px);left:calc(50% - 235px); }
+@media (max-width:900px) and (min-width:651px) {
+ .skill-orbit-art { transform:scale(.78);transform-origin:center center;margin-inline:-42px; }
+}
+@media (max-width:650px) {
+ .skill-orbit-art { min-height:420px;margin:0 -8px; }
+ .ring-product { width:202px;height:202px; }
+ .ring-work { width:344px;height:344px; }
+ .skill-label { font-size:7px;padding:6px 7px; }
+ .ps-1 { top:calc(50% - 122px);left:50%; }
+ .ps-2 { top:calc(50% - 76px);left:calc(50% + 88px); }
+ .ps-3 { top:calc(50% + 6px);left:calc(50% + 106px); }
+ .ps-4 { top:calc(50% + 84px);left:calc(50% + 76px); }
+ .ps-5 { top:calc(50% + 122px);left:50%; }
+ .ps-6 { top:calc(50% + 84px);left:calc(50% - 85px); }
+ .ps-7 { top:calc(50% + 6px);left:calc(50% - 106px); }
+ .ws-1 { top:calc(50% - 172px);left:50%; }
+ .ws-2 { top:calc(50% - 117px);left:calc(50% + 127px); }
+ .ws-3 { top:calc(50% - 7px);left:calc(50% + 163px); }
+ .ws-4 { top:calc(50% + 101px);left:calc(50% + 132px); }
+ .ws-5 { top:calc(50% + 172px);left:50%; }
+ .ws-6 { top:calc(50% + 117px);left:calc(50% - 132px); }
+ .ws-7 { top:calc(50% - 7px);left:calc(50% - 163px); }
+}
