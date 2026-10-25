@@ -289,3 +289,10 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
  .single-6 { top:calc(50% + 34px);left:calc(50% - 140px); }
  .single-7 { top:calc(50% - 95px);left:calc(50% - 119px); }
 }
+
+
+/* Keep the critical-thinking pill centered at the bottom of the single orbit */
+.single-5 { top:calc(50% + 207px);left:50%; }
+@media (max-width:650px) {
+  .single-5 { top:calc(50% + 151px);left:50%; }
+}
