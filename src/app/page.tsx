@@ -19,6 +19,14 @@ export default function Home() {
   const [menu, setMenu] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   useEffect(() => {
+    // Prevent mobile browsers from restoring a previous scroll position on a fresh homepage visit.
+    const previousRestoration = window.history.scrollRestoration;
+    window.history.scrollRestoration = "manual";
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "instant" }));
+    }
+
     const updateProgress = () => {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0);
@@ -26,7 +34,11 @@ export default function Home() {
     updateProgress();
     window.addEventListener("scroll", updateProgress, { passive: true });
     window.addEventListener("resize", updateProgress);
-    return () => { window.removeEventListener("scroll", updateProgress); window.removeEventListener("resize", updateProgress); };
+    return () => {
+      window.history.scrollRestoration = previousRestoration;
+      window.removeEventListener("scroll", updateProgress);
+      window.removeEventListener("resize", updateProgress);
+    };
   }, []);
   return <main className="site-shell" onPointerMove={(event) => { const rect = event.currentTarget.getBoundingClientRect(); event.currentTarget.style.setProperty("--pointer-x", `${event.clientX - rect.left}px`); event.currentTarget.style.setProperty("--pointer-y", `${event.clientY - rect.top}px`); }}>
     <div className="scroll-progress" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
