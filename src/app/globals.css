@@ -273,7 +273,7 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 .single-2 { top:calc(50% - 129px);left:calc(50% + 164px); }
 .single-3 { top:calc(50% + 45px);left:calc(50% + 193px); }
 .single-4 { top:calc(50% + 177px);left:calc(50% + 103px); }
-.single-5 { top:calc(50% + 207px);left:50%; }
+.single-5 { top:calc(50% + 187px);left:50%; }
 .single-6 { top:calc(50% + 45px);left:calc(50% - 193px); }
 .single-7 { top:calc(50% - 129px);left:calc(50% - 164px); }
 @media (max-width:900px) and (min-width:651px) { .skill-orbit-art { transform:scale(.82);transform-origin:center center;margin-inline:-30px; } }
@@ -285,7 +285,7 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
  .single-2 { top:calc(50% - 95px);left:calc(50% + 119px); }
  .single-3 { top:calc(50% + 34px);left:calc(50% + 140px); }
  .single-4 { top:calc(50% + 129px);left:calc(50% + 75px); }
- .single-5 { top:calc(50% + 151px);left:50%; }
+ .single-5 { top:calc(50% + 137px);left:50%; }
  .single-6 { top:calc(50% + 34px);left:calc(50% - 140px); }
  .single-7 { top:calc(50% - 95px);left:calc(50% - 119px); }
 }
