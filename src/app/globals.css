@@ -263,3 +263,29 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
  .ws-6 { top:calc(50% + 117px);left:calc(50% - 132px); }
  .ws-7 { top:calc(50% - 7px);left:calc(50% - 163px); }
 }
+
+
+/* Single clean orbit featuring seven standout soft skills */
+.skill-orbit-art { min-height:480px;overflow:visible; }
+.ring-single { width:410px;height:410px;border:1px solid #5B8CFF55;border-radius:50%;position:absolute;pointer-events:none;box-shadow:0 0 28px #245BFF0c;animation:orbit-spin 70s linear infinite; }
+.skill-label { transform:translate(-50%,-50%);font-size:9px;letter-spacing:0;padding:7px 10px; }
+.single-1 { top:calc(50% - 207px);left:50%; }
+.single-2 { top:calc(50% - 129px);left:calc(50% + 164px); }
+.single-3 { top:calc(50% + 45px);left:calc(50% + 193px); }
+.single-4 { top:calc(50% + 177px);left:calc(50% + 103px); }
+.single-5 { top:calc(50% + 207px);left:50%; }
+.single-6 { top:calc(50% + 45px);left:calc(50% - 193px); }
+.single-7 { top:calc(50% - 129px);left:calc(50% - 164px); }
+@media (max-width:900px) and (min-width:651px) { .skill-orbit-art { transform:scale(.82);transform-origin:center center;margin-inline:-30px; } }
+@media (max-width:650px) {
+ .skill-orbit-art { min-height:365px;margin:0 -8px; }
+ .ring-single { width:300px;height:300px; }
+ .skill-label { font-size:7px;padding:6px 7px; }
+ .single-1 { top:calc(50% - 151px);left:50%; }
+ .single-2 { top:calc(50% - 95px);left:calc(50% + 119px); }
+ .single-3 { top:calc(50% + 34px);left:calc(50% + 140px); }
+ .single-4 { top:calc(50% + 129px);left:calc(50% + 75px); }
+ .single-5 { top:calc(50% + 151px);left:50%; }
+ .single-6 { top:calc(50% + 34px);left:calc(50% - 140px); }
+ .single-7 { top:calc(50% - 95px);left:calc(50% - 119px); }
+}
