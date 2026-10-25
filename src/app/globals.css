@@ -174,3 +174,47 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
   .ps-1 { top:calc(50% - 115px);left:calc(50% - 24px); }.ps-2 { top:calc(50% - 77px);right:calc(50% - 118px); }.ps-3 { top:calc(50% - 4px);right:calc(50% - 119px); }.ps-4 { bottom:calc(50% - 78px);right:calc(50% - 116px); }.ps-5 { bottom:calc(50% - 116px);left:calc(50% - 37px); }.ps-6 { bottom:calc(50% - 78px);left:calc(50% - 117px); }.ps-7 { top:calc(50% - 4px);left:calc(50% - 119px); }
   .ws-1 { top:calc(50% - 172px);left:calc(50% - 36px); }.ws-2 { top:calc(50% - 128px);right:calc(50% - 165px); }.ws-3 { top:calc(50% - 38px);right:calc(50% - 168px); }.ws-4 { bottom:calc(50% - 75px);right:calc(50% - 160px); }.ws-5 { bottom:calc(50% - 171px);left:calc(50% - 59px); }.ws-6 { bottom:calc(50% - 128px);left:calc(50% - 164px); }.ws-7 { top:calc(50% - 38px);left:calc(50% - 162px); }
 }
+
+
+/* Spaced soft-skill labels: balanced, non-overlapping orbit positions */
+.skill-orbit-art { min-height:540px; overflow:visible; }
+.ring-product { width:300px;height:300px; }
+.ring-work { width:500px;height:500px; }
+.skill-label { transform:translate(-50%,-50%);font-size:10px;padding:8px 11px;z-index:4; }
+.ps-1 { top:calc(50% - 176px);left:50%; }
+.ps-2 { top:calc(50% - 111px);left:calc(50% + 135px);right:auto; }
+.ps-3 { top:calc(50% + 10px);left:calc(50% + 166px);right:auto; }
+.ps-4 { top:calc(50% + 121px);left:calc(50% + 118px);right:auto;bottom:auto; }
+.ps-5 { top:calc(50% + 178px);left:50%;bottom:auto; }
+.ps-6 { top:calc(50% + 121px);left:calc(50% - 133px);bottom:auto; }
+.ps-7 { top:calc(50% + 10px);left:calc(50% - 166px); }
+.ws-1 { top:calc(50% - 249px);left:50%; }
+.ws-2 { top:calc(50% - 164px);left:calc(50% + 190px);right:auto; }
+.ws-3 { top:calc(50% - 15px);left:calc(50% + 246px);right:auto; }
+.ws-4 { top:calc(50% + 147px);left:calc(50% + 205px);right:auto;bottom:auto; }
+.ws-5 { top:calc(50% + 246px);left:50%;bottom:auto; }
+.ws-6 { top:calc(50% + 164px);left:calc(50% - 205px);bottom:auto; }
+.ws-7 { top:calc(50% - 15px);left:calc(50% - 246px); }
+@media (max-width:900px) and (min-width:651px) {
+  .skill-orbit-art { transform:scale(.86); transform-origin:center center; margin-inline:-25px; }
+}
+@media (max-width:650px) {
+  .skill-orbit-art { min-height:420px; transform:none; margin:0 -8px; }
+  .ring-product { width:210px;height:210px; }
+  .ring-work { width:350px;height:350px; }
+  .skill-label { font-size:8px;letter-spacing:0;padding:6px 7px; }
+  .ps-1 { top:calc(50% - 127px);left:50%; }
+  .ps-2 { top:calc(50% - 80px);left:calc(50% + 91px); }
+  .ps-3 { top:calc(50% + 8px);left:calc(50% + 111px); }
+  .ps-4 { top:calc(50% + 88px);left:calc(50% + 79px); }
+  .ps-5 { top:calc(50% + 128px);left:50%; }
+  .ps-6 { top:calc(50% + 88px);left:calc(50% - 89px); }
+  .ps-7 { top:calc(50% + 8px);left:calc(50% - 111px); }
+  .ws-1 { top:calc(50% - 175px);left:50%; }
+  .ws-2 { top:calc(50% - 119px);left:calc(50% + 130px); }
+  .ws-3 { top:calc(50% - 8px);left:calc(50% + 166px); }
+  .ws-4 { top:calc(50% + 104px);left:calc(50% + 135px); }
+  .ws-5 { top:calc(50% + 175px);left:50%; }
+  .ws-6 { top:calc(50% + 119px);left:calc(50% - 135px); }
+  .ws-7 { top:calc(50% - 8px);left:calc(50% - 166px); }
+}
