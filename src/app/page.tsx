@@ -56,7 +56,7 @@ export default function Home() {
     <section id="achievements" className="section-wrap content-section"><div className="section-heading reveal-up"><p className="section-kicker">MILESTONES &amp; RECOGNITION</p><h2>Progress worth <span className="gradient-text">celebrating.</span></h2><p className="section-aside">Competitions, entrepreneurship, campus contributions, and learning through innovation.</p></div><div className="cert-grid achievements-grid">
       {[
         ["Top 100 Finalist — AI for Social Impact Challenge 2026","HCLFoundation & StartupTN","2026"],
-        ["Top 7 Finalist — TEXUS’26 Forge Warfare AI Competition","Among 30 teams","2026"],
+        ["Top 7 Finalist — TEXUS’26 Forge Warfare AI Competition","Among 70 teams","2026"],
         ["Selected Ideathon Participant — RiderCash","Tamizhan Skills Ideathon","2026"],
         ["Founder — Tales by Mav","Handmade accessories venture · ₹7,500+ sales revenue",""],
         ["Entrepreneurship Event Coordinator — S2 Challenge","Agni College of Technology",""],
