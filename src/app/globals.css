@@ -291,8 +291,8 @@ h1 { font-size:clamp(52px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;mar
 }
 
 
-/* Align critical thinking with the lower arc, with a clear gap from nearby labels */
-.single-5 { top:calc(50% + 187px);left:50%; }
+/* Place critical thinking on the lower-left arc, clear of analytical thinking */
+.single-5 { top:calc(50% + 177px);left:calc(50% - 104px); }
 @media (max-width:650px) {
-  .single-5 { top:calc(50% + 137px);left:50%; }
+  .single-5 { top:calc(50% + 127px);left:calc(50% - 76px); }
 }
