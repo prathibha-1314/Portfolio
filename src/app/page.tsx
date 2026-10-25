@@ -55,14 +55,15 @@ export default function Home() {
     </div></div></section>
     <section id="achievements" className="section-wrap content-section"><div className="section-heading reveal-up"><p className="section-kicker">MILESTONES &amp; RECOGNITION</p><h2>Progress worth <span className="gradient-text">celebrating.</span></h2><p className="section-aside">Competitions, entrepreneurship, campus contributions, and learning through innovation.</p></div><div className="cert-grid achievements-grid">
       {[
-        ["Top 100 Finalist — AI for Social Impact Challenge 2026","HCLFoundation & StartupTN","2026"],
+        ["Top 100 Finalist — AI for Social Impact Challenge 2026","ClearWay AI · HCLFoundation & StartupTN","2026"],
         ["Top 7 Finalist — TEXUS’26 Forge Warfare AI Competition","Among 70 teams","2026"],
+        ["Top 15 Finalist — Buildathon FutureForge","Buildathon finalist","2026"],
+        ["Naukri Campus Young Turks 2026 — Certificate of Merit","Scored in the 94.29 percentile","Oct 2026"],
+        ["Founder — Tales by Mav","Handmade accessories venture · ₹15,500+ sales revenue in 1.5 years",""],
+        ["Coordinator — $2 Challenge Entrepreneurship Event","Agni College of Technology",""],
         ["Selected Ideathon Participant — RiderCash","Tamizhan Skills Ideathon","2026"],
-        ["Founder — Tales by Mav","Handmade accessories venture · ₹7,500+ sales revenue",""],
-        ["Entrepreneurship Event Coordinator — S2 Challenge","Agni College of Technology",""],
         ["Design Committee Member — Agniverse 2025","Contributed to posters, banners, and certificates","2025"],
-        ["National-Level Ideathon Participant","Participation in a national-level innovation challenge",""],
-        ["College Innovation & Hackathon Participation","Technology-focused innovation activities and project showcases",""]
+        ["Japanese Language Course — N5-equivalent","Agni College of Technology · 60 hours · equivalent to JLPT N5","Apr 2026"]
       ].map(([title,detail,year])=><article className="cert-card achievement-card reveal-up" key={title}><span className="cert-icon">✧</span><div><h3>{title}</h3><p>{detail}</p></div>{year&&<span className="cert-year">{year}</span>}</article>)}
     </div></section>
     <section id="certifications" className="section-wrap content-section"><div className="section-heading reveal-up"><p className="section-kicker">ALWAYS LEARNING</p><h2>Courses &amp; <span className="gradient-text">certifications.</span></h2></div><div className="cert-grid">{[["Generative AI & Prompt Engineering","Tamizhan Skills · Internship","2025"],["Data Analytics Job Simulation","Tata Group × Forage","2025"],["Data Analytics Virtual Experience","Deloitte Australia × Forage","2025"],["Power BI for Beginners","Simplilearn",""],["Introduction to Generative AI","Simplilearn",""],["C Programming","SkillRack",""],["Introduction to Graphic Design","NPTEL",""],["Japanese Language Course · N5-equivalent","Agni College of Technology","2026"]].map(([title,issuer,year])=><article className="cert-card reveal-up" key={title}><span className="cert-icon">✧</span><div><h3>{title}</h3><p>{issuer}</p></div>{year&&<span className="cert-year">{year}</span>}</article>)}</div></section>
